@@ -10,7 +10,7 @@ import LoadingSpinner from '../components/UI/LoadingSpinner';
 const QuoteDetail = () => {
   const match = useRouteMatch();
   const params = useParams();
-
+  // console.log('%c TEST - match --> ', 'color: red', match);
   const { quoteId } = params;
 
   const { sendRequest, status, data: loadedQuote, error } = useHttp(
